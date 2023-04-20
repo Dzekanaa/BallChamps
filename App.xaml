@@ -9,6 +9,19 @@
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
+
+            <Color x:Key="orangeColor">#f24d00</Color>
+            <Color x:Key="grayColor">#1b1a1b</Color>
+            <Color x:Key="lightGrayColor">#a9a8a8</Color>
+            <x:Double x:Key="fontSize">22</x:Double>
+
+            <!--Style x:Key="baseLabelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="{StaticResource fontSize}" />
+            </Style>
+            <Style x:Key="infoLabelStyle" BasedOn="{StaticResource baseLabelStyle}" TargetType="Label">
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style-->
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>
