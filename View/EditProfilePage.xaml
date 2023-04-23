@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BallChamps.View.EditProfilePage"
+             Title="EditProfilePage"
+             BackgroundColor="White">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+
+        <ScrollView Grid.Row="0">
+            <StackLayout>
+                <Grid>
+
+
+                    <Image Source="iconorangecamera.png" Aspect="AspectFit" HeightRequest="105" WidthRequest="105"/>
+
+                    <Image Source="iconeditimg.png" Aspect="AspectFill" HeightRequest="100" WidthRequest="100" 
+                   Margin="20" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                    <Image Source="iconorangecamera.png" Aspect="AspectFit" HeightRequest="30" WidthRequest="30"
+                   Margin="40,95,0,0"/>
+                </Grid>
+
+
+
+                <Frame BackgroundColor="Transparent" BorderColor="{StaticResource grayColor}" HasShadow="False" CornerRadius="5" Padding="5" Grid.Row="2" Margin="25,10,25,10">
+                    <Grid Margin="0,10,0,10" Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="iconorangeuser.png"
+                            HeightRequest="25"
+                            WidthRequest="25"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center"
+                            Margin="5"
+                            Aspect="Fill"
+                           Grid.Column="0"/>
+
+                        <Entry TextColor="Black" PlaceholderColor="{StaticResource Black}" Placeholder="Choose UserName"
+                           HorizontalOptions="Start"      
+                           VerticalOptions="Center"
+                           Grid.Column="1"
+                           FontSize="Small"/>
+                    </Grid>
+                </Frame>
+
+                <Frame BackgroundColor="Transparent" BorderColor="{StaticResource grayColor}" HasShadow="False" CornerRadius="5" Padding="5" Grid.Row="2" Margin="25,10,25,10">
+                    <Grid Margin="0,10,0,10" Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="iconorangeuser.png"
+                            HeightRequest="25"
+                            WidthRequest="25"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center"
+                            Margin="5"
+                            Aspect="Fill"
+                           Grid.Column="0"/>
+
+                        <Entry TextColor="Black" PlaceholderColor="{StaticResource Black}" Placeholder="First Name"
+                           HorizontalOptions="Start"      
+                           VerticalOptions="Center"
+                           Grid.Column="1"
+                           FontSize="Small"/>
+                    </Grid>
+                </Frame>
+                <Frame BackgroundColor="Transparent" BorderColor="{StaticResource grayColor}" HasShadow="False" CornerRadius="5" Padding="5" Grid.Row="2" Margin="25,10,25,10">
+                    <Grid Margin="0,10,0,10" Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="iconorangeuser.png"
+                            HeightRequest="25"
+                            WidthRequest="25"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center"
+                            Margin="5"
+                            Aspect="Fill"
+                           Grid.Column="0"/>
+
+                        <Entry TextColor="Black" PlaceholderColor="{StaticResource Black}" Placeholder="Last Name"
+                           HorizontalOptions="Start"      
+                           VerticalOptions="Center"
+                           Grid.Column="1"
+                           FontSize="Small"/>
+                    </Grid>
+                </Frame>
+                <Frame BackgroundColor="Transparent" BorderColor="{StaticResource grayColor}" HasShadow="False" CornerRadius="5" Padding="5" Grid.Row="2" Margin="25,10,25,10">
+                    <Grid Margin="0,10,0,10" Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="iconage.png"
+                            HeightRequest="25"
+                            WidthRequest="25"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center"
+                            Margin="5"
+                            Aspect="Fill"
+                           Grid.Column="0"/>
+
+                        <Entry TextColor="Black" PlaceholderColor="{StaticResource Black}" Placeholder="Age"
+                           HorizontalOptions="Start"      
+                           VerticalOptions="Center"
+                           Grid.Column="1"
+                           FontSize="Small"/>
+                    </Grid>
+                </Frame>
+                
+                <Frame BackgroundColor="Transparent" BorderColor="{StaticResource grayColor}" HasShadow="False" CornerRadius="5" Padding="5" Grid.Row="2" Margin="25,10,25,10">
+                    <Grid Margin="0,10,0,10" Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="iconheight.png"
+                            HeightRequest="25"
+                            WidthRequest="25"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center"
+                            Margin="5"
+                            Aspect="Fill"
+                           Grid.Column="0"/>
+
+                        <Entry TextColor="Black" PlaceholderColor="{StaticResource Black}" Placeholder="Height"
+                           HorizontalOptions="Start"      
+                           VerticalOptions="Center"
+                           Grid.Column="1"
+                           FontSize="Small"/>
+                    </Grid>
+                </Frame>
+                <Frame BackgroundColor="Transparent" BorderColor="{StaticResource grayColor}" HasShadow="False" CornerRadius="5" Padding="5" Grid.Row="2" Margin="25,10,25,10">
+                    <Grid Margin="0,10,0,10" Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="iconstyleofplay.png"
+                            HeightRequest="25"
+                            WidthRequest="25"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center"
+                            Margin="5"
+                            Aspect="Fill"
+                           Grid.Column="0"/>
+
+                        <Entry TextColor="Black" PlaceholderColor="{StaticResource Black}" Placeholder="Style of play"
+                           HorizontalOptions="Start"      
+                           VerticalOptions="Center"
+                           Grid.Column="1"
+                           FontSize="Small"/>
+                    </Grid>
+                </Frame>
+                <Frame BackgroundColor="Transparent" BorderColor="{StaticResource grayColor}" HasShadow="False" CornerRadius="5" Padding="5" Grid.Row="2" Margin="25,10,25,10">
+                    <Grid Margin="0,10,0,10" Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="iconposition.png"
+                            HeightRequest="25"
+                            WidthRequest="25"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center"
+                            Margin="5"
+                            Aspect="Fill"
+                           Grid.Column="0"/>
+
+                        <Entry TextColor="Black" PlaceholderColor="{StaticResource Black}" Placeholder="Position"
+                           HorizontalOptions="Start"      
+                           VerticalOptions="Center"
+                           Grid.Column="1"
+                           FontSize="Small"/>
+                    </Grid>
+                </Frame>
+                <Frame BackgroundColor="Transparent" BorderColor="{StaticResource grayColor}" HasShadow="False" CornerRadius="5" Padding="5" Grid.Row="2" Margin="25,10,25,10">
+                    <Grid Margin="0,10,0,10" Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="iconskill.png"
+                            HeightRequest="25"
+                            WidthRequest="25"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center"
+                            Margin="5"
+                            Aspect="Fill"
+                           Grid.Column="0"/>
+
+                        <Entry TextColor="Black" PlaceholderColor="{StaticResource Black}" Placeholder="Skill one"
+                           HorizontalOptions="Start"      
+                           VerticalOptions="Center"
+                           Grid.Column="1"
+                           FontSize="Small"/>
+                    </Grid>
+                </Frame>
+                <Frame BackgroundColor="Transparent" BorderColor="{StaticResource grayColor}" HasShadow="False" CornerRadius="5" Padding="5" Grid.Row="2" Margin="25,10,25,10">
+                    <Grid Margin="0,10,0,10" Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="iconskill.png"
+                            HeightRequest="25"
+                            WidthRequest="25"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center"
+                            Margin="5"
+                            Aspect="Fill"
+                           Grid.Column="0"/>
+
+                        <Entry TextColor="Black" PlaceholderColor="{StaticResource Black}" Placeholder="Skill two"
+                           HorizontalOptions="Start"      
+                           VerticalOptions="Center"
+                           Grid.Column="1"
+                           FontSize="Small"/>
+                    </Grid>
+                </Frame>
+            </StackLayout>
+            
+            
+        </ScrollView>
+            <Button Grid.Row="1" Text="SAVE" FontAttributes="Bold" HeightRequest="60" FontSize="Micro" Padding="15" BackgroundColor="{StaticResource orangeColor}" TextColor="White" Margin="25,10,25,10" />
+    </Grid>
+    
+</ContentPage>

@@ -35,7 +35,7 @@
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.png" Color="#512BD4" BaseSize="128,128" />
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -49,11 +49,47 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Images\background.png" />
+	  <None Remove="Resources\Images\HomeImg1.png" />
+	  <None Remove="Resources\Images\HomeImg2.png" />
+	  <None Remove="Resources\Images\HomeImg3.png" />
+	  <None Remove="Resources\Images\iconAge.png" />
+	  <None Remove="Resources\Images\iconClock.png" />
+	  <None Remove="Resources\Images\iconEditImg.png" />
+	  <None Remove="Resources\Images\iconEmail.png" />
+	  <None Remove="Resources\Images\iconGreenArrow.png" />
+	  <None Remove="Resources\Images\iconGreenUser.png" />
+	  <None Remove="Resources\Images\iconHeight.png" />
+	  <None Remove="Resources\Images\iconOrangeCamera.png" />
+	  <None Remove="Resources\Images\iconOrangeUser.png" />
+	  <None Remove="Resources\Images\iconPassword.png" />
+	  <None Remove="Resources\Images\iconPosition.png" />
+	  <None Remove="Resources\Images\iconSend.png" />
+	  <None Remove="Resources\Images\iconSkill.png" />
+	  <None Remove="Resources\Images\iconStyleofPlay.png" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="View\" />
+	  <MauiXaml Update="View\ConversationPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\EditProfilePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\ForgotPasswordPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\HomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\LoginPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\ProfilePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\SignUpPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

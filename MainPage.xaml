@@ -21,12 +21,13 @@
         <Button Text="Log in"
             BackgroundColor="{StaticResource orangeColor}"
             TextColor="White"
-            FontSize="Large"
+            FontSize="Small"
             FontAttributes="Bold"
             HorizontalOptions="FillAndExpand"
             VerticalOptions="EndAndExpand"
             Margin="20"
-            Grid.Row="1" />
+            Grid.Row="1" 
+            Clicked="LoginButton_Clicked"/>
 
         <!-- Sign up button at the bottom -->
         <Button Text="Sign Up"
@@ -34,12 +35,15 @@
             BorderColor="{StaticResource orangeColor}"
             BorderWidth="2"
             TextColor="White"
-            FontSize="Large"
+            FontSize="Small"
             FontAttributes="Bold"
             HorizontalOptions="FillAndExpand"
             VerticalOptions="StartAndExpand"
             Margin="20"
-            Grid.Row="2" />
+            Grid.Row="2" 
+            Clicked="SignUpButton_Clicked"/>
     </Grid>
+    
+    
 
 </ContentPage>
