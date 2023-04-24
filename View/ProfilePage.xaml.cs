@@ -6,4 +6,8 @@ public partial class ProfilePage : ContentPage
 	{
 		InitializeComponent();
 	}
+	async void OnEditProfileButtonClicked(object sender, EventArgs e)
+	{
+		await Navigation.PushAsync(new EditProfilePage());
+	}
 }
