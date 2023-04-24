@@ -10,7 +10,7 @@ public partial class SignUpPage : ContentPage
 	{
 		await Navigation.PushModalAsync(new HomePage());
 	}
-	async void OnSignUpClicked(object sender, TappedEventArgs args)
+	async void OnLoginClicked(object sender, TappedEventArgs args)
 	{
 	    	await Navigation.PushModalAsync(new LoginPage());
 	}
