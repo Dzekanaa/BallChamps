@@ -81,13 +81,17 @@
 
         <Label Text="Forgot password?" TextColor="Gray" FontSize="Micro" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Italic" Grid.Row="6">
             <Label.GestureRecognizers>
-                <TapGestureRecognizer Command="{Binding ForgotPasswordCommand}" />
+                <TapGestureRecognizer Tapped="OnForgotPasswordClicked"/>
             </Label.GestureRecognizers>
         </Label>
 
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="7" Margin="35">
             <Label Text="Don't have an account? " TextColor="White" FontSize="Micro" VerticalOptions="Center" />
-            <Label Text=" Sign Up" TextColor="{StaticResource orangeColor}" FontSize="Micro" VerticalOptions="Center"/>
+            <Label Text=" Sign Up" TextColor="{StaticResource orangeColor}" FontSize="Micro" VerticalOptions="Center">
+              <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnSignUpClicked"/>
+              </Label.GestureRecognizers>
+            </Label>
         </StackLayout>
     </Grid>
 </ContentPage>
