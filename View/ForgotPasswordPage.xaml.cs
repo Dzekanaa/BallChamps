@@ -8,6 +8,6 @@ public partial class ForgotPasswordPage : ContentPage
 	}
 	async void OnLoginClicked(object sender, TappedEventArgs args)
 	{
-	    	await Navigation.PushModalAsync(new LoginPage());
+	    	await Navigation.PopAsync();
 	}
 }
