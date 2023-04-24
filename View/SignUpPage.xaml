@@ -134,7 +134,11 @@
 
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="8" Margin="35">
             <Label Text="Already have an account? " TextColor="White" FontSize="Micro" VerticalOptions="Center" />
-            <Label Text=" Login In" TextColor="{StaticResource orangeColor}" FontSize="Micro" VerticalOptions="Center"/>
+            <Label Text=" Login In" TextColor="{StaticResource orangeColor}" FontSize="Micro" VerticalOptions="Center">
+              <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnLoginClicked"/>
+              </Label.GestureRecognizers>
+            </Label>
         </StackLayout>
     </Grid>
 </ContentPage>
