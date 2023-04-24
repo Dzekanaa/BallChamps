@@ -11,11 +11,11 @@ public partial class LoginPage : ContentPage
 	{
 		await Navigation.PushModalAsync(new HomePage());
 	}
-	void OnSignUpClicked(object sender, TappedEventArgs args)
+	async void OnSignUpClicked(object sender, TappedEventArgs args)
 	{
 	    	await Navigation.PushModalAsync(new SignUpPage());
 	}
-	void OnForgotPasswordClicked(object sender, TappedEventArgs args)
+	async void OnForgotPasswordClicked(object sender, TappedEventArgs args)
 	{
 	    	await Navigation.PushModalAsync(new ForgotPasswordPage());
 	}
