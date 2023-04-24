@@ -3,9 +3,130 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BallChamps.View.WaitingListPage"
              BackgroundColor="White">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="lightGrayColor">#CCCCCC</Color>
+            <Color x:Key="orangeColor">#FFA500</Color>
+            <Style x:Key="FrameStyle" TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="White" />
+                <Setter Property="BorderColor" Value="{StaticResource lightGrayColor}" />
+                <Setter Property="Margin" Value="10" />
+                <Setter Property="Padding" Value="0" />
+            </Style>
+            <Style x:Key="GridStyle" TargetType="Grid">
+                <Setter Property="Padding" Value="10" />
+                <Setter Property="Margin" Value="0,10,0,10" />
+                <Setter Property="Grid.Row" Value="1" />
+                <Setter Property="ColumnSpacing" Value="10" />
+                <Setter Property="RowDefinitions">
+                    <Setter.Value>
+                        <RowDefinition Height="Auto" />
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="ColumnDefinitions">
+                    <Setter.Value>
+                        <ColumnDefinitionCollection>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </ColumnDefinitionCollection>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style x:Key="ImageStyle" TargetType="Image">
+                <Setter Property="WidthRequest" Value="55" />
+                <Setter Property="HeightRequest" Value="55" />
+                <Setter Property="Grid.Column" Value="0" />
+            </Style>
+            <Style x:Key="LabelStyle" TargetType="Label">
+                <Setter Property="Margin" Value="5" />
+                <Setter Property="TextColor" Value="{StaticResource orangeColor}" />
+                <Setter Property="FontSize" Value="Micro" />
+                <Setter Property="VerticalOptions" Value="Start" />
+            </Style>
+            <Style x:Key="StackLayoutStyle" TargetType="StackLayout">
+                <Setter Property="Margin" Value="10" />
+                <Setter Property="Grid.Column" Value="1" />
+            </Style>
+            <!-- Define the data for each frame -->
+            <x:Array x:Key="frameData" Type="{x:Type x:String}">
+                <x:String>Refina J. Mack</x:String>
+                <x:String>Walter L. Benett</x:String>
+                <x:String>Dana D. Jackson</x:String>
+                <x:String>Alex S. Crosby</x:String>
+                <x:String>Elizabeth K. Nissen</x:String>
+                <x:String>Maria J. Deluca</x:String>
+            </x:Array>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <ScrollView>
+
         <VerticalStackLayout>
-            <Frame BackgroundColor="White" BorderColor="{StaticResource lightGrayColor}" Margin="10" Padding="0">
+            <Frame Style="{StaticResource FrameStyle}">
+                <Grid Style="{StaticResource GridStyle}">
+                    <Image Style="{StaticResource ImageStyle}" Source="homeimg1.png" />
+                    <StackLayout Style="{StaticResource StackLayoutStyle}">
+                        <Label Style="{StaticResource LabelStyle}" Text="Albert L. Hernandez" />
+                    </StackLayout>
+                </Grid>
+            </Frame>
+
+            <Frame Style="{StaticResource FrameStyle}">
+                <Grid Style="{StaticResource GridStyle}">
+                    <Image Style="{StaticResource ImageStyle}" Source="homeimg3.png" />
+                    <StackLayout Style="{StaticResource StackLayoutStyle}">
+                        <Label Style="{StaticResource LabelStyle}" Text="Refina J. Mack" />
+                    </StackLayout>
+                </Grid>
+            </Frame>
+            
+            <Frame Style="{StaticResource FrameStyle}">
+                <Grid Style="{StaticResource GridStyle}">
+                    <Image Style="{StaticResource ImageStyle}" Source="homeimg1.png" />
+                    <StackLayout Style="{StaticResource StackLayoutStyle}">
+                        <Label Style="{StaticResource LabelStyle}" Text="Walter L. Benett" />
+                    </StackLayout>
+                </Grid>
+            </Frame>
+
+            <Frame Style="{StaticResource FrameStyle}">
+                <Grid Style="{StaticResource GridStyle}">
+                    <Image Style="{StaticResource ImageStyle}" Source="homeimg3.png" />
+                    <StackLayout Style="{StaticResource StackLayoutStyle}">
+                        <Label Style="{StaticResource LabelStyle}" Text="Dana D. Jackson" />
+                    </StackLayout>
+                </Grid>
+            </Frame>
+
+            <Frame Style="{StaticResource FrameStyle}">
+                <Grid Style="{StaticResource GridStyle}">
+                    <Image Style="{StaticResource ImageStyle}" Source="homeimg1.png" />
+                    <StackLayout Style="{StaticResource StackLayoutStyle}">
+                        <Label Style="{StaticResource LabelStyle}" Text="Alex S. Crosby" />
+                    </StackLayout>
+                </Grid>
+            </Frame>
+
+            <Frame Style="{StaticResource FrameStyle}">
+                <Grid Style="{StaticResource GridStyle}">
+                    <Image Style="{StaticResource ImageStyle}" Source="homeimg3.png" />
+                    <StackLayout Style="{StaticResource StackLayoutStyle}">
+                        <Label Style="{StaticResource LabelStyle}" Text="Elizabeth K. Nissen" />
+                    </StackLayout>
+                </Grid>
+            </Frame>
+            
+            <Frame Style="{StaticResource FrameStyle}">
+                <Grid Style="{StaticResource GridStyle}">
+                    <Image Style="{StaticResource ImageStyle}" Source="homeimg1.png" />
+                    <StackLayout Style="{StaticResource StackLayoutStyle}">
+                        <Label Style="{StaticResource LabelStyle}" Text="Maria J. Deluca" />
+                    </StackLayout>
+                </Grid>
+            </Frame>
+
+            <!--Frame BackgroundColor="White" BorderColor="{StaticResource lightGrayColor}" Margin="10" Padding="0">
                 <Grid Padding="10" Margin="0,10,0,10" Grid.Row="1" >
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
@@ -15,114 +136,12 @@
 
                     <Image Source="homeimg1.png" WidthRequest="55" HeightRequest="55" Grid.Column="0"/>
                     <StackLayout Grid.Column="1" Margin="10">
-                        <Label Margin="5" Text="Albert L. Hernandez" TextColor="{StaticResource orangeColor}" FontSize="Micro" VerticalOptions="Start"/>
-                    </StackLayout>
-
-                    
-                </Grid>
-            </Frame>
-
-            <Frame BackgroundColor="White" BorderColor="{StaticResource lightGrayColor}" Margin="10" Padding="0">
-                <Grid Padding="10" Margin="0,10,0,10" Grid.Row="1" >
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="Auto"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Image Source="homeimg3.png" WidthRequest="55" HeightRequest="55" Grid.Column="0"/>
-                    <StackLayout Grid.Column="1" Margin="10">
-                        <Label Margin="5" Text="Refina J. Mack" TextColor="{StaticResource orangeColor}" FontSize="Micro" VerticalOptions="Start"/>
-                    </StackLayout>
-
-                    
-                </Grid>
-            </Frame>
-
-            <Frame BackgroundColor="White" BorderColor="{StaticResource lightGrayColor}" Margin="10" Padding="0">
-                <Grid Padding="10" Margin="0,10,0,10" Grid.Row="1" >
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="Auto"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Image Source="homeimg1.png" WidthRequest="55" HeightRequest="55" Grid.Column="0"/>
-                    <StackLayout Grid.Column="1" Margin="10">
-                        <Label Margin="5" Text="Walter L. Benett" TextColor="{StaticResource orangeColor}" FontSize="Micro" VerticalOptions="Start"/>
-                    </StackLayout>
-
-                    
-                </Grid>
-            </Frame>
-
-            <Frame BackgroundColor="White" BorderColor="{StaticResource lightGrayColor}" Margin="10" Padding="0">
-                <Grid Padding="10" Margin="0,10,0,10" Grid.Row="1" >
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="Auto"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Image Source="homeimg3.png" WidthRequest="55" HeightRequest="55" Grid.Column="0"/>
-                    <StackLayout Grid.Column="1" Margin="10">
-                        <Label Margin="5" Text="Dana D. Jackson" TextColor="{StaticResource orangeColor}" FontSize="Micro" VerticalOptions="Start"/>
-                    </StackLayout>
-
-                    
-                </Grid>
-            </Frame>
-
-            <Frame BackgroundColor="White" BorderColor="{StaticResource lightGrayColor}" Margin="10" Padding="0">
-                <Grid Padding="10" Margin="0,10,0,10" Grid.Row="1" >
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="Auto"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Image Source="homeimg1.png" WidthRequest="55" HeightRequest="55" Grid.Column="0"/>
-                    <StackLayout Grid.Column="1" Margin="10">
-                        <Label Margin="5" Text="Alex S. Crosby" TextColor="{StaticResource orangeColor}" FontSize="Micro" VerticalOptions="Start"/>
-                    </StackLayout>
-
-                    
-                </Grid>
-            </Frame>
-
-            <Frame BackgroundColor="White" BorderColor="{StaticResource lightGrayColor}" Margin="10" Padding="0">
-                <Grid Padding="10" Margin="0,10,0,10" Grid.Row="1" >
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="Auto"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Image Source="homeimg3.png" WidthRequest="55" HeightRequest="55" Grid.Column="0"/>
-                    <StackLayout Grid.Column="1" Margin="10">
-                        <Label  Margin="5" Text="Elizabeth K. Nissen" TextColor="{StaticResource orangeColor}" FontSize="Micro" VerticalOptions="Start"/>
-                    </StackLayout>
-
-                    
-                </Grid>
-            </Frame>
-
-            <Frame BackgroundColor="White" BorderColor="{StaticResource lightGrayColor}" Margin="10" Padding="0">
-                <Grid Padding="10" Margin="0,10,0,10" Grid.Row="1" >
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="Auto"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Image Source="homeimg1.png" WidthRequest="55" HeightRequest="55" Grid.Column="0"/>
-                    <StackLayout Grid.Column="1" Margin="10">
-                        <Label  Margin="5" Text="Maria J. Deluca" TextColor="{StaticResource orangeColor}" FontSize="Micro" VerticalOptions="Start"/>
+                        <Label  Margin="5" Text="" TextColor="{StaticResource orangeColor}" FontSize="Micro" VerticalOptions="Start"/>
                     </StackLayout>
 
 
                 </Grid>
-            </Frame>
+            </Frame-->
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

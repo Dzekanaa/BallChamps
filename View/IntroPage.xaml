@@ -1,9 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BallChamps.MainPage"
+             x:Class="BallChamps.View.IntroPage"
              BackgroundImageSource="background.png" >
-
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*" />
@@ -15,7 +14,9 @@
         <Image Source="logo.png"
            Aspect="AspectFit"
            HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+           VerticalOptions="CenterAndExpand" 
+               HeightRequest="500"
+               Margin="50"/>
 
         <!-- Login button in the middle -->
         <Button Text="Log in"
@@ -43,7 +44,4 @@
             Grid.Row="2" 
             Clicked="SignUpButton_Clicked"/>
     </Grid>
-    
-    
-
 </ContentPage>
