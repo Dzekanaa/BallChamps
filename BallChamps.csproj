@@ -54,11 +54,13 @@
 	  <None Remove="Resources\Images\HomeImg3.png" />
 	  <None Remove="Resources\Images\iconAge.png" />
 	  <None Remove="Resources\Images\iconClock.png" />
+	  <None Remove="Resources\Images\iconDirection.png" />
 	  <None Remove="Resources\Images\iconEditImg.png" />
 	  <None Remove="Resources\Images\iconEmail.png" />
 	  <None Remove="Resources\Images\iconGreenArrow.png" />
 	  <None Remove="Resources\Images\iconGreenUser.png" />
 	  <None Remove="Resources\Images\iconHeight.png" />
+	  <None Remove="Resources\Images\iconMoreInfo.png" />
 	  <None Remove="Resources\Images\iconOrangeCamera.png" />
 	  <None Remove="Resources\Images\iconOrangeUser.png" />
 	  <None Remove="Resources\Images\iconPassword.png" />
@@ -66,10 +68,14 @@
 	  <None Remove="Resources\Images\iconSend.png" />
 	  <None Remove="Resources\Images\iconSkill.png" />
 	  <None Remove="Resources\Images\iconStyleofPlay.png" />
+	  <None Remove="Resources\Images\iconWaitingList.png" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <MauiXaml Update="View\ConversationPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\CourtsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\EditProfilePage.xaml">
@@ -87,7 +93,16 @@
 	  <MauiXaml Update="View\ProfilePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="View\RankPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="View\SignUpPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\ViewProfilePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\WaitingListPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
