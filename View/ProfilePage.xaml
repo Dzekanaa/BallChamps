@@ -37,7 +37,8 @@
                     <Label Text="Win%" HorizontalOptions="Center" TextColor="{StaticResource grayColor}" FontSize="Micro" />
                 </StackLayout>
             </Grid>
-            <Button Text="EDIT PROFILE" FontAttributes="Bold" FontSize="Micro" Padding="15" BackgroundColor="{StaticResource orangeColor}" TextColor="White" Margin="25,10,25,10" />
+            <Button Text="EDIT PROFILE" FontAttributes="Bold" FontSize="Micro" Padding="15" BackgroundColor="{StaticResource orangeColor}" TextColor="White" 
+                    Margin="25,10,25,10" Clicked="OnEditProfileButtonClicked"/>
             
             <Grid Margin="10">
                 <Grid.RowDefinitions>
