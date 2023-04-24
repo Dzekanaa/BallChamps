@@ -9,7 +9,6 @@ public partial class LoginPage : ContentPage
 
 	async void LoginButton_Clicked(object sender, EventArgs e)
 	{
-		await Navigation.PopAsync();
-		await Navigation.PushAsync(new HomePage());
+		await Navigation.PushModalAsync(new HomePage());
 	}
 }
