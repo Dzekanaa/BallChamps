@@ -6,4 +6,8 @@ public partial class ForgotPasswordPage : ContentPage
 	{
 		InitializeComponent();
 	}
+	async void OnLoginClicked(object sender, TappedEventArgs args)
+	{
+	    	await Navigation.PushModalAsync(new LoginPage());
+	}
 }
