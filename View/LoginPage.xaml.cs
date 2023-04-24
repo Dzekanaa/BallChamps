@@ -17,6 +17,7 @@ public partial class LoginPage : ContentPage
 	}
 	async void OnForgotPasswordClicked(object sender, TappedEventArgs args)
 	{
-	    	await Navigation.PushModalAsync(new ForgotPasswordPage());
+		// this needs to be regular because on forgot you should pop for performance
+	    	await Navigation.PushAsync(new ForgotPasswordPage()); 
 	}
 }
